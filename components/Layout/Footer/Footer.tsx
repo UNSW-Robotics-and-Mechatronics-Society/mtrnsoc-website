@@ -25,7 +25,7 @@ const TopHalfLogos = () => {
 const BottomText = () => {
   return (
     <div className="text-off-white h-full text-center">
-      Copyright &copy; 2022 UNSW Mechatronics Society - All Rights Reserved.
+      Copyright &copy; 2024 UNSW Mechatronics Society - All Rights Reserved.
     </div>
   );
 };

@@ -9,7 +9,7 @@ import { PositionType } from "components/Banner/Banner";
 import { PageInformation, homePageData } from "data/navLinksData";
 import { spArcLink } from "data/socialsData";
 import sponsorsData, { SponsorData } from "data/sponsorsData";
-import { ProfileData, execData2023 } from "data/teamData";
+import { ProfileData, execData } from "data/teamData";
 import styles from "styles/index.module.scss";
 
 type TitleHeaderProps = {
@@ -258,7 +258,7 @@ export const getServerSideProps: GetServerSideProps<HomePageProps> = async () =>
 
   const sortedCurrentEvents = getSortedEvents(currentEvents);
 
-  const featuredPersonData = execData2023.find((x) => x.position === "President");
+  const featuredPersonData = execData.find((x) => x.position === "President");
 
   if (featuredPersonData === undefined) {
     throw "Could not find person to feature from teamData.ts";
