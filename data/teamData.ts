@@ -50,7 +50,7 @@ export const execData: ProfileData[] = [
     linkedIn: "https://www.linkedin.com/in/nahiyan-mahmud-928b90265/",
   },
   {
-    src: "/images/profiles/AkhilG.jpg",
+    src: "https://media.licdn.com/dms/image/D4D03AQEqXnSw22TQTg/profile-displayphoto-shrink_400_400/0/1707656377788?e=1724284800&v=beta&t=8IEYZ_ObkApiouj97bAE8TPok3d9lezQkHVSZJ6g2iA",
     id: "Akhil Govan",
     position: "Technical Executive",
     linkedIn: "https://www.linkedin.com/in/akhil-govan/",
