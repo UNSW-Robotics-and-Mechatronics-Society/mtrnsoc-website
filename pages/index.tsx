@@ -41,11 +41,11 @@ const SectionWhoWeAre = (): JSX.Element => {
           </p>
         </div>
         <div className={styles.WhoWeAreButtonsContainer}>
-          <Link legacyBehavior href="https://www.mtrnsocsumobot.com/">
+          {/* <Link legacyBehavior href="https://www.mtrnsocsumobot.com/">
             <a className="pb-5 px-5" target="_blank">
               <button className={styles.buttonStyle}>SumoBots 2023</button>
             </a>
-          </Link>
+          </Link> */}
           <Link
             legacyBehavior
             href="https://drive.google.com/file/d/1osLLTE31Ce_P-UxY63j-iTw4f-b-wgR1/view?usp=sharing"
