@@ -26,10 +26,10 @@ export const execData: ProfileData[] = [
     linkedIn: "https://www.linkedin.com/in/jess-luo-0a7282208/",
   },
   {
-    src: "/images/profiles/unknown.jpg",
+    src: "/images/profiles/RubyC.jpg",
     id: "Ruby Chang",
     position: "Secretary",
-    linkedIn: null,
+    linkedIn: "https://www.linkedin.com/in/ruby-chang-7236891b3/",
   },
   {
     src: "/images/profiles/Muhammad.jpg",
@@ -101,10 +101,10 @@ export const directorData: ProfileData[] = [
     linkedIn: "https://www.linkedin.com/in/weichentie/",
   },
   {
-    src: "/images/profiles/unknown.jpg",
+    src: "/images/profiles/ChrisS.jpg",
     id: "Chris Schmooel",
     position: "Marketing Director",
-    linkedIn: "",
+    linkedIn: null,
   },
   {
     src: "https://media.licdn.com/dms/image/D5603AQFJUkdDbEHQvg/profile-displayphoto-shrink_400_400/0/1713417590933?e=1723680000&v=beta&t=bgnFkTMXHp4X1glPl8FXNdQXQxt3rhE324DNPF9WInM",
@@ -120,19 +120,19 @@ export const directorData: ProfileData[] = [
     linkedIn: "https://www.linkedin.com/in/bhavichauhan/",
   },
   {
-    src: "/images/profiles/unknown.jpg",
+    src: "/images/profiles/RamG.jpg",
     id: "Ram Ganesh",
     position: "Projects Director",
     linkedIn: null,
   },
   {
-    src: "/images/profiles/unknown.jpg",
+    src: "/images/profiles/JefferyZ.jpg",
     id: "Jeffery Zhu",
     position: "Socials Director",
     linkedIn: "https://www.linkedin.com/in/jeffrey-zhu37/",
   },
   {
-    src: "/images/profiles/unknown.jpg",
+    src: "/images/profiles/MichaelD.jpg",
     id: "Michael Dawson",
     position: "Socials Director",
     linkedIn: "https://www.linkedin.com/in/michael-dawson-14740b26a/",
