@@ -107,7 +107,7 @@ export const directorData: ProfileData[] = [
     linkedIn: null,
   },
   {
-    src: "https://media.licdn.com/dms/image/D5603AQFJUkdDbEHQvg/profile-displayphoto-shrink_400_400/0/1713417590933?e=1723680000&v=beta&t=bgnFkTMXHp4X1glPl8FXNdQXQxt3rhE324DNPF9WInM",
+    src: "/images/profiles/KurumiN.png",
     id: "Kurumi Nagaoka",
     position: "Marketing Director",
     linkedIn:
