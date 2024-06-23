@@ -9,7 +9,7 @@ import { PositionType } from "components/Banner/Banner";
 import { PageInformation, homePageData } from "data/navLinksData";
 import { spArcLink } from "data/socialsData";
 import sponsorsData, { SponsorData } from "data/sponsorsData";
-import { ProfileData, execData2023 } from "data/teamData";
+import { ProfileData, execData } from "data/teamData";
 import styles from "styles/index.module.scss";
 
 type TitleHeaderProps = {
@@ -41,11 +41,11 @@ const SectionWhoWeAre = (): JSX.Element => {
           </p>
         </div>
         <div className={styles.WhoWeAreButtonsContainer}>
-          <Link legacyBehavior href="https://www.mtrnsocsumobot.com/">
+          {/* <Link legacyBehavior href="https://www.mtrnsocsumobot.com/">
             <a className="pb-5 px-5" target="_blank">
               <button className={styles.buttonStyle}>SumoBots 2023</button>
             </a>
-          </Link>
+          </Link> */}
           <Link
             legacyBehavior
             href="https://drive.google.com/file/d/1osLLTE31Ce_P-UxY63j-iTw4f-b-wgR1/view?usp=sharing"
@@ -258,7 +258,7 @@ export const getServerSideProps: GetServerSideProps<HomePageProps> = async () =>
 
   const sortedCurrentEvents = getSortedEvents(currentEvents);
 
-  const featuredPersonData = execData2023.find((x) => x.position === "President");
+  const featuredPersonData = execData.find((x) => x.position === "President");
 
   if (featuredPersonData === undefined) {
     throw "Could not find person to feature from teamData.ts";

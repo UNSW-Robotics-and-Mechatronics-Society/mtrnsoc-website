@@ -5,13 +5,7 @@ import ProfileCards from "components/Profile/ProfileCards";
 import SubcomProfileCards from "components/Profile/SubcomProfileCards";
 import { PageInformation, teamPageData } from "data/navLinksData";
 import { emailData } from "data/socialsData";
-import {
-  ProfileData,
-  SubcomProfileData,
-  directorData,
-  execData2023,
-  subcomData,
-} from "data/teamData";
+import { ProfileData, SubcomProfileData, directorData, execData, subcomData } from "data/teamData";
 import styles from "styles/team.module.scss";
 
 type TitleHeaderProps = {
@@ -114,7 +108,7 @@ const Team: NextPage<TeamPageProps> = ({
         <SectionExecutives
           execProfileData={exec2023ProfileData}
           email={email}
-          text="2023 Executives"
+          text="2024 Executives"
         />
         <SectionDirectors directorProfileData={directorProfileData} email={email} />
         <SectionSubcommittee subcomProfileData={subcomProfileData} />
@@ -131,7 +125,7 @@ export const getStaticProps: GetStaticProps<TeamPageProps> = async () => {
       // NOTE: Based on how children components were designed, 'mailto:' is added to email string
       email: emailData.display,
       pageData: teamPageData,
-      exec2023ProfileData: execData2023,
+      exec2023ProfileData: execData,
     },
   };
 };
