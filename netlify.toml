@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/sumobots/*"
+  to = "https://unsw-mechatronics-society.github.io/sumobots/:splat"
+  status = 301
+  force = true
