@@ -1,6 +1,7 @@
 import React from "react";
 import type { GetServerSideProps, NextPage } from "next";
 import Link from "next/link";
+import useEvents from "hooks/useEvents";
 import { getCurrentEvents } from "util/api";
 import { Event, EventDetail, getSortedEvents } from "util/eventsHelpers";
 import useWindowDimensions from "util/useWindowDimensions";
@@ -198,29 +199,23 @@ const JoinUsSection = ({ spArcLink }: JoinUsSectionPops): JSX.Element => {
 };
 
 type HomePageProps = {
-  currentEventsRaw: EventDetail[];
   sponsors: SponsorData[];
   featuredPersonData: ProfileData;
   spArcLink: string;
   pageData: PageInformation;
 };
 
-const Home: NextPage<HomePageProps> = ({
-  currentEventsRaw,
-  sponsors,
-  featuredPersonData,
-  spArcLink,
-  pageData,
-}) => {
+const Home: NextPage<HomePageProps> = ({ sponsors, featuredPersonData, spArcLink, pageData }) => {
   const { width } = useWindowDimensions();
   const [position, setPosition] = React.useState<PositionType>("bottom-left");
 
+  const { currentEventsRaw } = useEvents();
   React.useEffect(() => {
     // 639px is based on a set TailwindCSS breakpoint
     if (width !== null) setPosition(width <= 639 ? "center" : "bottom-left");
   }, [width]);
 
-  const currentEvents = currentEventsRaw.map((x) => Event.eventFromEventDetails(x));
+  const currentEvents = currentEventsRaw?.map((x) => Event.eventFromEventDetails(x)) ?? [];
   const scrollID = "homePageScrollDiv";
 
   return (
@@ -250,14 +245,6 @@ const Home: NextPage<HomePageProps> = ({
 };
 
 export const getServerSideProps: GetServerSideProps<HomePageProps> = async () => {
-  // Fetch currentEvents from CMS
-  const [currentEvents, err] = await getCurrentEvents();
-
-  if (err !== null || err === undefined) throw err;
-  if (currentEvents === null) throw new Error("Uncaught error with currentEvents API call");
-
-  const sortedCurrentEvents = getSortedEvents(currentEvents);
-
   const featuredPersonData = execData.find((x) => x.position === "President");
 
   if (featuredPersonData === undefined) {
@@ -266,7 +253,6 @@ export const getServerSideProps: GetServerSideProps<HomePageProps> = async () =>
 
   return {
     props: {
-      currentEventsRaw: sortedCurrentEvents.map((x) => x.toJSON()),
       sponsors: sponsorsData,
       featuredPersonData: featuredPersonData,
       spArcLink: spArcLink,

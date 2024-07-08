@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import type { GetServerSideProps, NextPage } from "next";
 import Link from "next/link";
+import useEvents from "hooks/useEvents";
 import moment from "moment";
-import { getCurrentEvents, getPastEvents } from "util/api";
-import { Event, EventDetail, getSortedEvents } from "util/eventsHelpers";
+import { Event, EventDetail } from "util/eventsHelpers";
 import useWindowDimensions from "util/useWindowDimensions";
 import { Banner, ContentContainer, DropdownYear, EventCardHorizontal, MetaTags } from "components";
 import { PageInformation, eventsPageData } from "data/navLinksData";
@@ -30,8 +30,6 @@ type YearlyEventsByTerm = {
 };
 
 type EventsPageProps = {
-  currentEventsRaw: EventDetail[];
-  eventsByYearByTermRaw: YearlyEventsByTermRaw[];
   yearData: YearDateInformation[];
   pageData: PageInformation;
 };
@@ -187,38 +185,46 @@ const PastEventsSection = ({
   );
 };
 
-const Home: NextPage<EventsPageProps> = ({
-  currentEventsRaw,
-  eventsByYearByTermRaw,
-  yearData,
-  pageData,
-}) => {
+const Home: NextPage<EventsPageProps> = ({ yearData, pageData }) => {
   const scrollID = "eventsPageScrollDiv";
 
   const { width } = useWindowDimensions();
 
   const years = yearData.map((x) => x.year);
 
-  const currentEvents = currentEventsRaw.map((x) => Event.eventFromEventDetails(x));
-  const eventsByYearByTerm: YearlyEventsByTerm[] = eventsByYearByTermRaw.map((x) => {
-    return {
-      year: x.year,
-      t1: x.t1.map((y) => Event.eventFromEventDetails(y)),
-      t2: x.t2.map((y) => Event.eventFromEventDetails(y)),
-      t3: x.t3.map((y) => Event.eventFromEventDetails(y)),
-    };
-  });
-  const [yearSelected, setYearSelected] = React.useState(
-    years.filter((x) => {
-      // Pick the first one that has events
-      // This is kinda dodgy but it works
-      return eventsByYearByTerm.find((y) => y.year === x);
-    })[0],
-  );
-  // console.log(eventsByYearByTerm);
+  const { currentEventsRaw, eventsByYearByTermRaw } = useEvents();
 
-  const CurrentEventsSection = () => {
-    if (currentEvents.length >= 1) {
+  const currentEvents = useMemo(() => {
+    return currentEventsRaw?.map((x) => Event.eventFromEventDetails(x));
+  }, [currentEventsRaw]);
+
+  const eventsByYearByTerm: YearlyEventsByTerm[] | undefined = useMemo<
+    YearlyEventsByTerm[] | undefined
+  >(() => {
+    return eventsByYearByTermRaw?.map((x) => {
+      return {
+        year: x.year,
+        t1: x.t1.map((y) => Event.eventFromEventDetails(y)),
+        t2: x.t2.map((y) => Event.eventFromEventDetails(y)),
+        t3: x.t3.map((y) => Event.eventFromEventDetails(y)),
+      };
+    });
+  }, [eventsByYearByTermRaw]);
+
+  const [yearSelected, setYearSelected] = useState<number>(0);
+  useEffect(() => {
+    if (!eventsByYearByTerm) return;
+    setYearSelected(
+      years.filter((x) => {
+        // Pick the first one that has events
+        // This is kinda dodgy but it works
+        return eventsByYearByTerm.find((y) => y.year === x);
+      })[0],
+    );
+  }, [eventsByYearByTerm]);
+
+  const CurrentEventsSection = useCallback(() => {
+    if (currentEvents && currentEvents.length >= 1) {
       // There exists a current event
       return (
         <>
@@ -235,7 +241,7 @@ const Home: NextPage<EventsPageProps> = ({
       // TODO: No current event display
       return <div>No events currently :(</div>;
     }
-  };
+  }, [currentEvents]);
 
   return (
     <div className="h-full">
@@ -252,7 +258,7 @@ const Home: NextPage<EventsPageProps> = ({
         scrollToID={scrollID}
       />
       <div id={scrollID}></div>
-      {currentEvents.length >= 1 && (
+      {currentEvents && currentEvents.length >= 1 && (
         <ContentContainer customBackgroundColour="bg-uranian-blue">
           <div className={styles.mainContainer}>
             <h1 className="text-4xl font-medium mb-6 uppercase">Current Events</h1>
@@ -263,20 +269,22 @@ const Home: NextPage<EventsPageProps> = ({
       <ContentContainer>
         <div className={styles.mainContainer}>
           <h1 className="text-4xl font-medium mb-6 uppercase">Past Events</h1>
-          <div className={styles.pastEventsContainer}>
-            <div className="flex justify-end w-full max-pastEventsTitle:justify-center max-pastEventsTitle:pb-3">
-              <DropdownYear
-                years={years}
+          {eventsByYearByTerm && (
+            <div className={styles.pastEventsContainer}>
+              <div className="flex justify-end w-full max-pastEventsTitle:justify-center max-pastEventsTitle:pb-3">
+                <DropdownYear
+                  years={years}
+                  yearSelected={yearSelected}
+                  setYearSelected={setYearSelected}
+                />
+              </div>
+              <PastEventsSection
+                eventsByYearByTerm={eventsByYearByTerm}
                 yearSelected={yearSelected}
-                setYearSelected={setYearSelected}
+                width={width}
               />
             </div>
-            <PastEventsSection
-              eventsByYearByTerm={eventsByYearByTerm}
-              yearSelected={yearSelected}
-              width={width}
-            />
-          </div>
+          )}
         </div>
       </ContentContainer>
     </div>
@@ -284,39 +292,10 @@ const Home: NextPage<EventsPageProps> = ({
 };
 
 export const getServerSideProps: GetServerSideProps<EventsPageProps> = async () => {
-  const [currentEvents, err1] = await getCurrentEvents();
-
-  if (err1 !== null || err1 === undefined) throw err1;
-  if (currentEvents === null) throw new Error("Uncaught error with currentEvents API call");
-
-  const sortedCurrentEvents = getSortedEvents(currentEvents);
-
-  const [pastEvents, err2] = await getPastEvents();
-
-  if (err2 !== null || err2 === undefined) throw err2;
-  if (pastEvents === null) throw new Error("Uncaught error with pastEvents API call");
-
-  // Get unique years from pastEvents
-  const uniqueYears: Set<number> = new Set();
-  pastEvents.forEach((event) => {
-    const earliestDate = event.startDate;
-    uniqueYears.add(moment.unix(earliestDate).year());
-  });
-
-  // Split past events into years
-
   /**
    * `pastEvents` sorted into groups with the same year
    */
   const eventsByYear: YearlyEvents[] = [];
-
-  uniqueYears.forEach((year) => {
-    const eventsForYear = pastEvents.filter((x) => {
-      const earliestDate = x.startDate;
-      return moment.unix(earliestDate).year() === year;
-    });
-    eventsByYear.push({ year, events: eventsForYear });
-  });
 
   /**
    * `pastEvents` sorted by years then by UNSW terms
@@ -370,8 +349,6 @@ export const getServerSideProps: GetServerSideProps<EventsPageProps> = async () 
 
   return {
     props: {
-      currentEventsRaw: sortedCurrentEvents.map((x) => x.toJSON()),
-      eventsByYearByTermRaw: eventsByYearByTerm,
       yearData: yearDates,
       pageData: eventsPageData,
     },
