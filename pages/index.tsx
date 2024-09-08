@@ -41,9 +41,9 @@ const SectionWhoWeAre = (): JSX.Element => {
           </p>
         </div>
         <div className={styles.WhoWeAreButtonsContainer}>
-          <Link legacyBehavior href="https://www.mtrnsocsumobot.com/">
+          <Link legacyBehavior href="https://unsw-mechatronics-society.github.io/sumobots/">
             <a className="pb-5 px-5" target="_blank">
-              <button className={styles.buttonStyle}>SumoBots 2023</button>
+              <button className={styles.buttonStyle}>SumoBots 2024</button>
             </a>
           </Link>
           <Link
