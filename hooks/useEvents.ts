@@ -13,6 +13,7 @@ type Response = {
   eventsByYearByTermRaw: YearlyEventsByTermRaw[];
 };
 
+// Returns a response object containing the events, otherwise throws an error
 async function getEvents() {
   const res = await fetch(window.location.origin + "/api/events");
   if (!res.ok) {
@@ -21,6 +22,7 @@ async function getEvents() {
   return await res.json();
 }
 
+// This hook provides a list of events with caching capabilities
 export default function useEvents() {
   const query = useQuery<Response>("events", getEvents);
 
