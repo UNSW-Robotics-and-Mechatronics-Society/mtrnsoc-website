@@ -4,6 +4,8 @@ import { getCurrentEvents, getPastEvents } from "util/api";
 import { Event, EventDetail, getSortedEvents } from "util/eventsHelpers";
 import { yearDates } from "data/termDatesData";
 
+export const dynamic = "force-dynamic";
+
 type YearlyEvents = {
   year: number;
   events: Event[];
