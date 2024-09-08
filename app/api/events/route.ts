@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import moment from "moment";
 import { getCurrentEvents, getPastEvents } from "util/api";
 import { Event, EventDetail, getSortedEvents } from "util/eventsHelpers";
-import { eventsPageData } from "data/navLinksData";
 import { yearDates } from "data/termDatesData";
 
 type YearlyEvents = {

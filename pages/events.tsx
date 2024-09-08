@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import type { GetServerSideProps, NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import useEvents from "hooks/useEvents";
 import moment from "moment";
@@ -291,7 +291,7 @@ const Home: NextPage<EventsPageProps> = ({ yearData, pageData }) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps<EventsPageProps> = async () => {
+export const getStaticProps: GetStaticProps<EventsPageProps> = async () => {
   /**
    * `pastEvents` sorted into groups with the same year
    */

@@ -1,9 +1,8 @@
 import React from "react";
-import type { GetServerSideProps, NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import useEvents from "hooks/useEvents";
-import { getCurrentEvents } from "util/api";
-import { Event, EventDetail, getSortedEvents } from "util/eventsHelpers";
+import { Event } from "util/eventsHelpers";
 import useWindowDimensions from "util/useWindowDimensions";
 import { Banner, ContentContainer, MetaTags, OurCurrentEvents } from "components";
 import { PositionType } from "components/Banner/Banner";
@@ -244,7 +243,7 @@ const Home: NextPage<HomePageProps> = ({ sponsors, featuredPersonData, spArcLink
   );
 };
 
-export const getServerSideProps: GetServerSideProps<HomePageProps> = async () => {
+export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
   const featuredPersonData = execData.find((x) => x.position === "President");
 
   if (featuredPersonData === undefined) {
