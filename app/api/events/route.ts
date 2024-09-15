@@ -25,7 +25,7 @@ type YearlyEventsByTerm = {
   t3: Event[];
 };
 
-export async function GET(request: Request, context:any) {
+export async function GET(request: Request, context: any) {
   const [currentEventsRes, pastEventsRes] = await Promise.all(
     await Promise.all([getCurrentEvents(), getPastEvents()]),
   );
