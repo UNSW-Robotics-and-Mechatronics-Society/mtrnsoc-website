@@ -4,6 +4,8 @@ import { getCurrentEvents, getPastEvents } from "util/api";
 import { Event, EventDetail, getSortedEvents } from "util/eventsHelpers";
 import { yearDates } from "data/termDatesData";
 
+export const dynamic = "force-dynamic";
+
 type YearlyEvents = {
   year: number;
   events: Event[];
@@ -23,7 +25,7 @@ type YearlyEventsByTerm = {
   t3: Event[];
 };
 
-export async function GET() {
+export async function GET(request: Request, context: any) {
   const [currentEventsRes, pastEventsRes] = await Promise.all(
     await Promise.all([getCurrentEvents(), getPastEvents()]),
   );

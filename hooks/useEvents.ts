@@ -25,7 +25,6 @@ async function getEvents() {
 // This hook provides a list of events with caching capabilities
 export default function useEvents() {
   const query = useQuery<Response>("events", getEvents);
-
   return {
     currentEventsRaw: query.data?.currentEventsRaw,
     eventsByYearByTermRaw: query.data?.eventsByYearByTermRaw,

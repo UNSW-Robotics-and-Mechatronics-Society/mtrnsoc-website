@@ -112,23 +112,25 @@ export function ReactSlidingPane({
       onRequestClose={onRequestClose}
       contentLabel={`Modal "${title ?? ""}"`}
     >
-      {!hideHeader && (
-        <div className={styles["slide-pane__header"]}>
-          <div
-            className={styles["slide-pane__close"]}
-            onClick={onRequestClose}
-            role="button"
-            tabIndex={0}
-          >
-            {closeIcon ?? <IconClose />}
+      <>
+        {!hideHeader && (
+          <div className={styles["slide-pane__header"]}>
+            <div
+              className={styles["slide-pane__close"]}
+              onClick={onRequestClose}
+              role="button"
+              tabIndex={0}
+            >
+              {closeIcon ?? <IconClose />}
+            </div>
+            <div className={styles["slide-pane__title-wrapper"]}>
+              <h2 className={styles["slide-pane__title"]}>{title}</h2>
+              <div className={styles["slide-pane__subtitle"]}>{subtitle}</div>
+            </div>
           </div>
-          <div className={styles["slide-pane__title-wrapper"]}>
-            <h2 className={styles["slide-pane__title"]}>{title}</h2>
-            <div className={styles["slide-pane__subtitle"]}>{subtitle}</div>
-          </div>
-        </div>
-      )}
-      <div className={styles["slide-pane__content"]}>{children}</div>
+        )}
+        <div className={styles["slide-pane__content"]}>{children}</div>
+      </>
     </Modal>
   );
 }

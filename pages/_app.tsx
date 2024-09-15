@@ -13,6 +13,8 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
             // With SSR, we usually want to set some default staleTime
             // above 0 to avoid refetching immediately on the client
             staleTime: 0,
+            refetchOnWindowFocus: false,
+            refetchOnReconnect: false,
           },
         },
       }),
