@@ -3,3 +3,8 @@
   to = "https://unsw-mechatronics-society.github.io/sumobots/:splat"
   status = 301
   force = true
+[[redirects]]
+  from = "/buildathon2024/*"
+  to = "https://unsw-mechatronics-society.github.io/2024-buildathon-frontend/:splat"
+  status = 301
+  force = true
