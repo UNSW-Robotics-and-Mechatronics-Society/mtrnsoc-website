@@ -107,11 +107,10 @@ export const directorData: ProfileData[] = [
     linkedIn: null,
   },
   {
-    src: "/images/profiles/KurumiN.jpg",
-    id: "Kurumi Nagaoka",
+    src: "/images/profiles/ChaeyeonL.jpg",
+    id: "Chaeyeon Lee",
     position: "Marketing Director",
-    linkedIn:
-      "https://www.linkedin.com/in/kurumi-nagaoka-8b5139267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedIn: null,
   },
   {
     src: "/images/profiles/BhaviC.jpg",
