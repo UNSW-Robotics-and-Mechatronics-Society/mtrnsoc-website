@@ -5,24 +5,26 @@ type SubcomProfileCardsType = {
   subcomData: SubcomProfileData[];
 };
 
-const SubcomProfileCards = ({ subcomData }: SubcomProfileCardsType): JSX.Element => {
+const SubcomProfileCards = ( { subcomData }: SubcomProfileCardsType ): JSX.Element =>
+{
   return (
-    <div className={styles.subcomMainContainer}>
-      {subcomData.map((team, indx) => {
+    <div className={ styles.subcomMainContainer }>
+      { subcomData.map( ( team, indx ) =>
+      {
         return (
           <div
-            className={styles.subcomContainer}
-            key={`${team.portfolioName} subcommittee section`}
+            className={ styles.subcomContainer }
+            key={ `${ team.portfolio } subcommittee section` }
           >
-            <h1 className={styles.subcomPosition}>{team.portfolioName}</h1>
-            <div className={styles.subcomName}>
-              {team.members.map((memberName) => (
-                <p key={memberName}>{memberName}</p>
-              ))}
+            <h1 className={ styles.subcomPosition }>{ team.portfolio }</h1>
+            <div className={ styles.subcomName }>
+              { team.members.map( ( memberName ) => (
+                <p key={ memberName }>{ memberName }</p>
+              ) ) }
             </div>
           </div>
         );
-      })}
+      } ) }
     </div>
   );
 };
