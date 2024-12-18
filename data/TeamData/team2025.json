@@ -1,0 +1,182 @@
+{
+  "execs": [
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Ruby Chang",
+      "role": "President",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Bhavi Chauhan",
+      "role": "Vice President",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Jeffery Zhu",
+      "role": "Secretary",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Sandeera Marasinghe",
+      "role": "Arc Delegate",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Michael Dawson",
+      "role": "Treasurer",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Petra Chan",
+      "role": "Grievance & EDI Officer",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Yangyue Jiang",
+      "role": "Technical Executive",
+      "linkedIn": null
+    }
+  ],
+  "directors": [
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Cynthia Ng",
+      "role": "Creatives Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Teonie Quach",
+      "role": "Creatives Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Hendrik Arendsen",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Samuel Gray",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Alan Choi",
+      "role": "IT Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Weichen Tie",
+      "role": "IT Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Alen Jowins",
+      "role": "Marketing Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Jayson Pang",
+      "role": "Marketing Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Jahi Patel",
+      "role": "OutReach Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Tarun Sathish",
+      "role": "OutReach Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Aliff Azlan",
+      "role": "Projects Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Ryan Kwok",
+      "role": "Projects Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Akshyt Banerjee",
+      "role": "Socials Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Candy Tang",
+      "role": "Socials Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Angelo Sleiman",
+      "role": "Workshops Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Sithula Angulugaha Gamage",
+      "role": "Workshops Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Reshika Aich",
+      "role": "Women In Engineering Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "Trisha Chittajallu",
+      "role": "Women In Engineering Director",
+      "linkedIn": null
+    }
+  ],
+  "subcoms": [
+    {
+      "portfolio": "Socials",
+      "members": []
+    },
+    {
+      "portfolio": "Workshops",
+      "members": []
+    },
+    {
+      "portfolio": "Projects",
+      "members": []
+    },
+    {
+      "portfolio": "Industry & Sponsors",
+      "members": []
+    },
+    {
+      "portfolio": "Creatives",
+      "members": []
+    },
+    {
+      "portfolio": "Marketing",
+      "members": []
+    }
+  ]
+}
