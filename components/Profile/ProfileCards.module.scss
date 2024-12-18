@@ -3,19 +3,19 @@
 }
 
 .profileContainer {
-  @apply flex flex-col justify-between m-2 p-6 w-64 h-96;
+  @apply flex flex-col items-center justify-between m-2 p-6 w-64 h-96 rounded-lg;
 }
 
 .execBGColour {
-  @apply bg-[#E8EFF5];
+  @apply bg-[#e6f3ff];
 }
 
 .directorBGColour {
-  @apply bg-[#E9EBED];
+  @apply bg-[#f4f7fa];
 }
 
 .picture {
-  @apply flex content-start h-52 w-52 rounded-full object-cover;
+  @apply h-44 w-44 rounded-full object-cover;
 }
 
 .descriptionContainer {
@@ -23,23 +23,32 @@
 }
 
 .textContainer {
-  @apply pt-4 px-2;
+  @apply flex flex-col justify-start items-center pt-8;
 }
 
 .name {
-  @apply text-center text-xl font-semibold;
+  @apply text-center text-xl font-semibold leading-tight;
+  @apply h-14;
 }
 
 .position {
-  @apply text-center leading-normal text-gray-500 font-normal text-sm uppercase;
+  @apply text-center text-gray-500 font-normal text-sm uppercase leading-normal;
+  @apply h-12;
 }
 
 .links {
-  @apply flex flex-row justify-center pt-4;
+  @apply flex flex-row justify-center mt-auto gap-2;
 }
 
 .logo {
   @apply h-6 px-1;
+  &:hover {
+    @apply scale-110;
+  }
+
+  &:active {
+    @apply scale-95;
+  }
 }
 
 /*
