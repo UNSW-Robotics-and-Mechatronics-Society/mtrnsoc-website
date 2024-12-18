@@ -1,0 +1,171 @@
+{
+  "execs": [
+    {
+      "profileImg": "/images/profiles/2024/AngusW.jpg",
+      "name": "Angus Wang",
+      "role": "President",
+      "linkedIn": "https://www.linkedin.com/in/angus-wang-2a4905203/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/JessL.jpg",
+      "name": "Jess Luo",
+      "role": "Vice President",
+      "linkedIn": "https://www.linkedin.com/in/jess-luo-0a7282208/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/RubyC.jpg",
+      "name": "Ruby Chang",
+      "role": "Secretary",
+      "linkedIn": "https://www.linkedin.com/in/ruby-chang-7236891b3/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/Muhammad.jpg",
+      "name": "Muhammad Haffejee",
+      "role": "Arc Delegate",
+      "linkedIn": "https://www.linkedin.com/in/muhammad-haffejee/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/CarmenZ.jpg",
+      "name": "Carmen Zhang",
+      "role": "Treasurer",
+      "linkedIn": "www.linkedin.com/in/jiawen-zhang-1aa622203"
+    },
+    {
+      "profileImg": "/images/profiles/2024/NahiyanM.jpg",
+      "name": "Nahiyan Mahmud",
+      "role": "Grievance & EDI Officer",
+      "linkedIn": "https://www.linkedin.com/in/nahiyan-mahmud-928b90265/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/AkhilG.jpg",
+      "name": "Akhil Govan",
+      "role": "Technical Executive",
+      "linkedIn": "https://www.linkedin.com/in/akhil-govan/"
+    }
+  ],
+  "directors": [
+    {
+      "profileImg": "/images/profiles/2024/AnirudhR.jpg",
+      "name": "Anirudh Raju",
+      "role": "Creatives Director",
+      "linkedIn": "https://www.linkedin.com/in/anirudh-raju-7983a7228/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/RamzelL.jpg",
+      "name": "Ramzel Liwanag",
+      "role": "Creatives Director",
+      "linkedIn": "https://www.linkedin.com/in/ramzel-liwanag-18358a202/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/AnchalaM.jpg",
+      "name": "Anchala Marugan",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": "https://www.linkedin.com/in/anchala-marugan-272682242/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/EvanR.jpg",
+      "name": "Evan Richardson",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": "https://www.linkedin.com/in/evan-richardson-aa797b227/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/KaiT.jpg",
+      "name": "Kai Turner",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": "https://www.linkedin.com/in/kaiturnersyd/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/SanikaR.jpg",
+      "name": "Sanika Raje",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": "https://www.linkedin.com/in/sanikaraje/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/WeichenT.jpg",
+      "name": "Weichen Tie",
+      "role": "IT Director",
+      "linkedIn": "https://www.linkedin.com/in/weichentie/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/ChrisS.jpg",
+      "name": "Chris Schmooel",
+      "role": "Marketing Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/2024/ChaeyeonL.jpg",
+      "name": "Chaeyeon Lee",
+      "role": "Marketing Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/2024/BhaviC.jpg",
+      "name": "Bhavi Chauhan",
+      "role": "Projects Director",
+      "linkedIn": "https://www.linkedin.com/in/bhavichauhan/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/RamG.jpg",
+      "name": "Ram Ganesh",
+      "role": "Projects Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/2024/JefferyZ.jpg",
+      "name": "Jeffery Zhu",
+      "role": "Socials Director",
+      "linkedIn": "https://www.linkedin.com/in/jeffrey-zhu37/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/MichaelD.jpg",
+      "name": "Michael Dawson",
+      "role": "Socials Director",
+      "linkedIn": "https://www.linkedin.com/in/michael-dawson-14740b26a/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/ElsaD.jpg",
+      "name": "Elsa Doan",
+      "role": "Workshops Director",
+      "linkedIn": "https://www.linkedin.com/in/elsa-doan-7a2bb4264/"
+    },
+    {
+      "profileImg": "/images/profiles/2024/YangyueJ.jpg",
+      "name": "Yangyue Jiang",
+      "role": "Workshops Director",
+      "linkedIn": "https://www.linkedin.com/in/yangyue-jiang-a08888264/"
+    }
+  ],
+  "subcoms": [
+    {
+      "portfolio": "Socials",
+      "members": ["Adyan Pang", "Candy Tang", "Sandeera Marasinghe", "Sorita Um"]
+    },
+    {
+      "portfolio": "Workshops",
+      "members": ["Albert Tri", "Alex Hunter", "Sho Watanabe", "Sophie Fox"]
+    },
+    {
+      "portfolio": "Projects",
+      "members": ["Alan Choi", "Cormac Morrison", "Petra Chan", "Reshika Aich", "Ryan Kwok"]
+    },
+    {
+      "portfolio": "Industry & Sponsors",
+      "members": ["Coraly Penano", "Vedant Tyagi"]
+    },
+    {
+      "portfolio": "Creatives",
+      "members": ["Cynthia Ng", "Dhruv Joshi"]
+    },
+    {
+      "portfolio": "Marketing",
+      "members": [
+        "Alan Feng",
+        "Benny Cheng",
+        "Ethan Khisa",
+        "Simeon Ling",
+        "Sithula Gamage",
+        "Wesley Donald"
+      ]
+    }
+  ]
+}
