@@ -1,0 +1,38 @@
+.yearSelectorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.arrowButton {
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: transform 0.2s ease, color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    color: #0070f3;
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+
+  &:disabled {
+    color: gray;
+    cursor: zoom-in;
+    opacity: 0.6;
+    transform: none;
+  }
+}
+
+.yearDisplay {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}

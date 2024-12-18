@@ -8,6 +8,7 @@ import { emailData } from "data/socialsData";
 import { TeamData, ProfileData, SubcomProfileData, loadTeamData, getAvailableYearTeamData } from "data/teamData";
 import styles from "styles/team.module.scss";
 import { useState } from "react";
+import YearArrowSelector from "components/Team/YearArrowSelector";
 
 type TitleHeaderProps = {
   text: string;
@@ -104,6 +105,26 @@ const Team: NextPage<TeamPageProps> = ( {
   const [ directorProfileDataState, setDirectorProfileDataState ] = useState<ProfileData[]>( directorProfileData );
   const [ subcomProfileDataState, setSubcomProfileDataState ] = useState<SubcomProfileData[]>( subcomProfileData );
 
+  const handleYearChange = async ( year: number ) =>
+  {
+    try
+    {
+      setYearSelected( year );
+
+      const response = await fetch( `/api/teamData/${ year }` );
+      if ( !response.ok ) throw new Error( "Failed to fetch team data" );
+
+      const teamData = await response.json();
+
+      setExecProfileDataState( teamData.execs );
+      setDirectorProfileDataState( teamData.directors );
+      setSubcomProfileDataState( teamData.subcoms );
+    } catch ( error )
+    {
+      console.error( "Error fetching team data:", error );
+    }
+  };
+
   return (
     <div className="h-full">
       <MetaTags
@@ -120,6 +141,11 @@ const Team: NextPage<TeamPageProps> = ( {
           scrollToID={ scrollID }
         />
         <div id={ scrollID }></div>
+        <YearArrowSelector
+          currentYear={ yearSelected }
+          availableYears={ availableYears }
+          onYearChange={ handleYearChange }
+        />
         <SectionExecutives
           execProfileData={ execProfileDataState }
           email={ email }
