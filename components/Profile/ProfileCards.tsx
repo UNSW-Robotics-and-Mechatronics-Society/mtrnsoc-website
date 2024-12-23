@@ -9,34 +9,36 @@ type ProfileCardsProp = {
   contactEmail: string;
 };
 
-const ProfileCards = ({ profileData, background, contactEmail }: ProfileCardsProp): JSX.Element => {
+const ProfileCards = ( { profileData, background, contactEmail }: ProfileCardsProp ): JSX.Element =>
+{
   const backgroundClass = background === "director" ? styles.directorBGColour : styles.execBGColour;
   return (
-    <div className={styles.mainContainer}>
-      {profileData.map((profile, index) => {
+    <div className={ styles.mainContainer }>
+      { profileData.map( ( profile, index ) =>
+      {
         return (
           <div
-            className={`${styles.profileContainer} ${backgroundClass}`}
-            key={`${profile.position} card ${index}`}
+            className={ `${ styles.profileContainer } ${ backgroundClass }` }
+            key={ `${ profile.role } card ${ index }` }
           >
-            <img src={profile.src} alt={profile.id} className={styles.picture} />
-            <div className={styles.textContainer}>
-              <h1 className={styles.name}>{profile.id}</h1>
-              <div className={styles.position}>{profile.position}</div>
+            <img src={ profile.profileImg } alt={ profile.name } className={ styles.picture } />
+            <div className={ styles.textContainer }>
+              <h1 className={ styles.name }>{ profile.name }</h1>
+              <div className={ styles.position }>{ profile.role }</div>
             </div>
-            <div className={styles.links}>
-              {profile.linkedIn !== null && (
-                <a rel="noreferrer" target="_blank" href={profile.linkedIn}>
-                  <img src="/logos/linkedinLogo.svg" alt="LinkedInLogo" className={styles.logo} />
+            <div className={ styles.links }>
+              { profile.linkedIn !== null && (
+                <a rel="noreferrer" target="_blank" href={ profile.linkedIn }>
+                  <img src="/logos/linkedinLogo.svg" alt="LinkedInLogo" className={ styles.logo } />
                 </a>
-              )}
-              <a href={`mailto:${contactEmail}`}>
-                <img src="/logos/emailLogo.svg" alt="LinkedInLogo" className={styles.logo} />
+              ) }
+              <a href={ `mailto:${ contactEmail }` }>
+                <img src="/logos/emailLogo.svg" alt="LinkedInLogo" className={ styles.logo } />
               </a>
             </div>
           </div>
         );
-      })}
+      } ) }
     </div>
   );
 };

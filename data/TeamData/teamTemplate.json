@@ -1,0 +1,194 @@
+{
+  "execs": [
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "President",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Vice President",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Secretary",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Arc Delegate",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Treasurer",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Grievance & EDI Officer",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Technical Executive",
+      "linkedIn": null
+    }
+  ],
+  "directors": [
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Creatives Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Creatives Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Industry & Sponsorships Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "IT Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "IT Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Marketing Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Marketing Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Out Reach Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Out Reach Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Projects Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Projects Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Socials Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Socials Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Workshops Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Workshops Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Women In Engineering Director",
+      "linkedIn": null
+    },
+    {
+      "profileImg": "/images/profiles/unknown.jpg",
+      "name": "name",
+      "role": "Women In Engineering Director",
+      "linkedIn": null
+    }
+  ],
+  "subcoms": [
+    {
+      "portfolio": "Socials",
+      "members": []
+    },
+    {
+      "portfolio": "Workshops",
+      "members": []
+    },
+    {
+      "portfolio": "Projects",
+      "members": []
+    },
+    {
+      "portfolio": "Industry & Sponsors",
+      "members": []
+    },
+    {
+      "portfolio": "Creatives",
+      "members": []
+    },
+    {
+      "portfolio": "Marketing",
+      "members": []
+    }
+  ]
+}
