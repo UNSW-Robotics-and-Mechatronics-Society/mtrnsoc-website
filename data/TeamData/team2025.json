@@ -1,90 +1,102 @@
 {
   "execs": [
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/RubyC.jpg",
       "name": "Ruby Chang",
       "role": "President",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/ruby-chang-7236891b3/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/BhaviC.jpg",
       "name": "Bhavi Chauhan",
       "role": "Vice President",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/bhavichauhan/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/JefferyZ.jpg",
       "name": "Jeffery Zhu",
       "role": "Secretary",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/jeffrey-zhu37/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/SandeeraM.jpg",
       "name": "Sandeera Marasinghe",
       "role": "Arc Delegate",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/sandeeramarasinghe/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/MichaelD.jpg",
       "name": "Michael Dawson",
       "role": "Treasurer",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/michael-dawson-14740b26a/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/PetraC.jpg",
       "name": "Petra Chan",
       "role": "Grievance & EDI Officer",
-      "linkedIn": null
+      "linkedIn": "http://linkedin.com/in/petra-chan"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/EthanK.jpg",
+      "name": "Ethan Khisa",
+      "role": "Marketing Executive",
+      "linkedIn": "https://www.linkedin.com/in/ethan-khisa"
+    },
+    {
+      "profileImg": "/images/profiles/2025/YangyueJ.jpg",
       "name": "Yangyue Jiang",
       "role": "Technical Executive",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/yangyue-jiang-a08888264/"
+    },
+    {
+      "profileImg": "/images/profiles/2025/RikkiA.jpg",
+      "name": "Rik Arendsen",
+      "role": "Industry & Sponsorships Executive",
+      "linkedIn": "https://www.linkedin.com/in/hendrik-rikki-arendsen-a56a22221/"
     }
   ],
   "directors": [
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/CynthiaN.jpg",
       "name": "Cynthia Ng",
       "role": "Creatives Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/cynthia-ng-b8a108208"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/TeonieQ.jpg",
       "name": "Teonie Quach",
       "role": "Creatives Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/teonie-quach-7364052a8"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
-      "name": "Hendrik Arendsen",
+      "profileImg": "/images/profiles/2025/ArtemS.jpg",
+      "name": "Artem Suiargulov",
       "role": "Industry & Sponsorships Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/artem-suiargulov"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/SamuelG.jpg",
       "name": "Samuel Gray",
       "role": "Industry & Sponsorships Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/samuel-gray-mechatronic"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/AlanC.jpg",
       "name": "Alan Choi",
       "role": "IT Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/alan-choi-86579120a/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/WeichenT.jpg",
       "name": "Weichen Tie",
       "role": "IT Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/weichentie/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/AlenJ.jpg",
       "name": "Alen Jowins",
       "role": "Marketing Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/alen-jowins-56a8b6315"
     },
     {
       "profileImg": "/images/profiles/unknown.jpg",
@@ -93,64 +105,64 @@
       "linkedIn": null
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/JahiP.jpg",
       "name": "Jahi Patel",
       "role": "OutReach Director",
       "linkedIn": null
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/TarunS.jpg",
       "name": "Tarun Sathish",
       "role": "OutReach Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/tarun-sathish-9719282b9/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/AliffA.jpg",
       "name": "Aliff Azlan",
       "role": "Projects Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/aliff-azlan-73980920a/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/RyanK.jpg",
       "name": "Ryan Kwok",
       "role": "Projects Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/ryan-kwok-8549452a5"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
-      "name": "Akshyt Banerjee",
+      "profileImg": "/images/profiles/2025/SamB.jpg",
+      "name": "Sam Banerjee",
       "role": "Socials Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/akshyt-banerjee-7998a1199"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/CandyT.jpg",
       "name": "Candy Tang",
       "role": "Socials Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/candyltang"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/AngeloS.jpg",
       "name": "Angelo Sleiman",
       "role": "Workshops Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/angelo-sleiman-b47849245"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/SithulaG.jpg",
       "name": "Sithula Angulugaha Gamage",
       "role": "Workshops Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/sithulagamage/"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/ReshikaA.jpg",
       "name": "Reshika Aich",
       "role": "Women In Engineering Director",
-      "linkedIn": null
+      "linkedIn": "https://www.linkedin.com/in/reshika-aich-360059310"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/TrishaC.jpg",
       "name": "Trisha Chittajallu",
       "role": "Women In Engineering Director",
-      "linkedIn": null
+      "linkedIn": "https://au.linkedin.com/in/trisha-chittajallu"
     }
   ],
   "subcoms": [
