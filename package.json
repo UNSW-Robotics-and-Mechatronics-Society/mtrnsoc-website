@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^2.8.1",
-    "contentful": "^9.2.14",
+    "contentful": "^11.3.4",
     "moment": "^2.29.4",
     "next": "14.2.4",
     "react": "18.3.1",
