@@ -1,18 +1,20 @@
 import styles from "./YearArrowSelector.module.scss";
 
 type YearArrowSelectorProps = {
+  selectedYear: number;
   currentYear: number;
   availableYears: number[];
   onYearChange: ( year: number ) => void; // Callback to update the year
 };
 
 const YearArrowSelector = ( {
+  selectedYear,
   currentYear,
   availableYears,
   onYearChange,
 }: YearArrowSelectorProps ): JSX.Element =>
 {
-  const currentIndex = availableYears.indexOf( currentYear );
+  const currentIndex = availableYears.indexOf( selectedYear );
 
   const handlePrevious = () =>
   {
@@ -39,7 +41,7 @@ const YearArrowSelector = ( {
       >
         { "<" }
       </button>
-      <span className={ styles.yearDisplay }>{ currentYear }</span>
+      <span className={ `${ styles.yearDisplay } ${ currentYear === selectedYear ? "text-secondary" : "text-[#333]" }` }>{ selectedYear }</span>
       <button
         onClick={ handleNext }
         disabled={ currentIndex === availableYears.length - 1 }

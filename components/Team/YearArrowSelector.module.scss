@@ -7,13 +7,13 @@
 
 .arrowButton {
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   padding: 0 1rem;
   transition: transform 0.2s ease, color 0.3s ease;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: #0070f3;
   }
 
@@ -23,16 +23,15 @@
 
   &:disabled {
     color: gray;
-    cursor: zoom-in;
+    cursor: default;
     opacity: 0.6;
     transform: none;
   }
 }
 
 .yearDisplay {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0 1rem;
-  color: #333;
   transition: color 0.3s ease;
 }
