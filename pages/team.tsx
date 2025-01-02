@@ -4,11 +4,11 @@ import { Banner } from "components";
 import ProfileCards from "components/Profile/ProfileCards";
 import SubcomProfileCards from "components/Profile/SubcomProfileCards";
 import { PageInformation, teamPageData } from "data/navLinksData";
-import { emailData } from "data/socialsData";
 import { TeamData, ProfileData, SubcomProfileData, loadTeamData, getAvailableYearTeamData } from "data/teamData";
 import styles from "styles/team.module.scss";
 import { useState } from "react";
 import YearArrowSelector from "components/Team/YearArrowSelector";
+import Link from "next/link";
 
 type TitleHeaderProps = {
   text: string;
@@ -21,13 +21,11 @@ const TitleHeader = ( { text }: TitleHeaderProps ): JSX.Element =>
 
 type SectionExecutivesProps = {
   execProfileData: ProfileData[];
-  email: string;
   text?: string;
 };
 
 const SectionExecutives = ( {
   execProfileData,
-  email,
   text = "Executives",
 }: SectionExecutivesProps ): JSX.Element =>
 {
@@ -35,7 +33,7 @@ const SectionExecutives = ( {
     <ContentContainer>
       <div className={ styles.sectionContainer }>
         <TitleHeader text={ text } />
-        <ProfileCards profileData={ execProfileData } background="executive" contactEmail={ email } />
+        <ProfileCards profileData={ execProfileData } background="executive" />
       </div>
     </ContentContainer>
   );
@@ -43,10 +41,9 @@ const SectionExecutives = ( {
 
 type SectionDirectorsProps = {
   directorProfileData: ProfileData[];
-  email: string;
 };
 
-const SectionDirectors = ( { directorProfileData, email }: SectionDirectorsProps ): JSX.Element =>
+const SectionDirectors = ( { directorProfileData }: SectionDirectorsProps ): JSX.Element =>
 {
   return (
     <ContentContainer>
@@ -55,7 +52,6 @@ const SectionDirectors = ( { directorProfileData, email }: SectionDirectorsProps
         <ProfileCards
           profileData={ directorProfileData }
           background="director"
-          contactEmail={ email }
         />
       </div>
     </ContentContainer>
@@ -63,16 +59,17 @@ const SectionDirectors = ( { directorProfileData, email }: SectionDirectorsProps
 };
 
 type SectionSubcommitteeProps = {
+  selectedYear: number;
   subcomProfileData: SubcomProfileData[];
 };
 
-const SectionSubcommittee = ( { subcomProfileData }: SectionSubcommitteeProps ): JSX.Element =>
+const SectionSubcommittee = ( { selectedYear, subcomProfileData }: SectionSubcommitteeProps ): JSX.Element =>
 {
   return (
     <ContentContainer>
       <div className={ styles.sectionContainer }>
         <TitleHeader text="Subcommittee" />
-        <SubcomProfileCards subcomData={ subcomProfileData } />
+        <SubcomProfileCards selectedYear={ selectedYear } subcomData={ subcomProfileData } />
       </div>
     </ContentContainer>
   );
@@ -84,7 +81,6 @@ type TeamPageProps = {
   execProfileData: ProfileData[];
   directorProfileData: ProfileData[];
   subcomProfileData: SubcomProfileData[];
-  email: string;
   pageData: PageInformation;
 };
 
@@ -94,7 +90,6 @@ const Team: NextPage<TeamPageProps> = ( {
   execProfileData,
   directorProfileData,
   subcomProfileData,
-  email,
   pageData,
 } ) =>
 {
@@ -142,17 +137,17 @@ const Team: NextPage<TeamPageProps> = ( {
         />
         <div id={ scrollID }></div>
         <YearArrowSelector
-          currentYear={ yearSelected }
+          selectedYear={ yearSelected }
+          currentYear={ currentYear }
           availableYears={ availableYears }
           onYearChange={ handleYearChange }
         />
         <SectionExecutives
           execProfileData={ execProfileDataState }
-          email={ email }
           text="Executives"
         />
-        <SectionDirectors directorProfileData={ directorProfileDataState } email={ email } />
-        <SectionSubcommittee subcomProfileData={ subcomProfileDataState } />
+        <SectionDirectors directorProfileData={ directorProfileDataState } />
+        <SectionSubcommittee selectedYear={ yearSelected } subcomProfileData={ subcomProfileDataState } />
       </div>
     </div>
   );
@@ -170,8 +165,6 @@ export const getStaticProps: GetStaticProps<TeamPageProps> = async () =>
       execProfileData: teamData.execs,
       directorProfileData: teamData.directors,
       subcomProfileData: teamData.subcoms,
-      // NOTE: Based on how children components were designed, 'mailto:' is added to email string
-      email: emailData.display,
       pageData: teamPageData,
     },
   };

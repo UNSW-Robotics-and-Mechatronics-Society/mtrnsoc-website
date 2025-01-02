@@ -14,9 +14,9 @@
 }
 
 .executivesContainer {
-  @apply flex flex-row justify-center w-full max-w-[80%] pb-20;
+  @apply flex flex-row justify-between w-full max-w-[100%] pb-20;
 }
 
 .profileContainer {
-  @apply flex flex-row justify-around w-full max-w-[80%] pb-20;
+  @apply flex flex-row justify-around w-full max-w-[100%] pb-20;
 }
