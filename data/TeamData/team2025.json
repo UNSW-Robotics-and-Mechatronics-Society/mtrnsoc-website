@@ -4,55 +4,64 @@
       "profileImg": "/images/profiles/2025/RubyC.jpg",
       "name": "Ruby Chang",
       "role": "President",
-      "linkedIn": "https://www.linkedin.com/in/ruby-chang-7236891b3/"
+      "linkedIn": "https://www.linkedin.com/in/ruby-chang-7236891b3/",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/BhaviC.jpg",
       "name": "Bhavi Chauhan",
       "role": "Vice President",
-      "linkedIn": "https://www.linkedin.com/in/bhavichauhan/"
+      "linkedIn": "https://www.linkedin.com/in/bhavichauhan/",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/JefferyZ.jpg",
-      "name": "Jeffery Zhu",
+      "name": "Jeffrey Zhu",
       "role": "Secretary",
-      "linkedIn": "https://www.linkedin.com/in/jeffrey-zhu37/"
+      "linkedIn": "https://www.linkedin.com/in/jeffrey-zhu37/",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/SandeeraM.jpg",
       "name": "Sandeera Marasinghe",
       "role": "Arc Delegate",
-      "linkedIn": "https://www.linkedin.com/in/sandeeramarasinghe/"
+      "linkedIn": "https://www.linkedin.com/in/sandeeramarasinghe/",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/MichaelD.jpg",
       "name": "Michael Dawson",
       "role": "Treasurer",
-      "linkedIn": "https://www.linkedin.com/in/michael-dawson-14740b26a/"
+      "linkedIn": "https://www.linkedin.com/in/michael-dawson-14740b26a/",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/PetraC.jpg",
       "name": "Petra Chan",
       "role": "Grievance & EDI Officer",
-      "linkedIn": "http://linkedin.com/in/petra-chan"
+      "linkedIn": "http://linkedin.com/in/petra-chan",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/EthanK.jpg",
       "name": "Ethan Khisa",
       "role": "Marketing Executive",
-      "linkedIn": "https://www.linkedin.com/in/ethan-khisa"
+      "linkedIn": "https://www.linkedin.com/in/ethan-khisa",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/YangyueJ.jpg",
       "name": "Yangyue Jiang",
       "role": "Technical Executive",
-      "linkedIn": "https://www.linkedin.com/in/yangyue-jiang-a08888264/"
+      "linkedIn": "https://www.linkedin.com/in/yangyue-jiang-a08888264/",
+      "email": "technical@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/RikkiA.jpg",
       "name": "Rik Arendsen",
       "role": "Industry & Sponsorships Executive",
-      "linkedIn": "https://www.linkedin.com/in/hendrik-rikki-arendsen-a56a22221/"
+      "linkedIn": "https://www.linkedin.com/in/hendrik-rikki-arendsen-a56a22221/",
+      "email": "industry@ramsocunsw.org"
     }
   ],
   "directors": [
@@ -60,135 +69,128 @@
       "profileImg": "/images/profiles/2025/CynthiaN.jpg",
       "name": "Cynthia Ng",
       "role": "Creatives Director",
-      "linkedIn": "https://www.linkedin.com/in/cynthia-ng-b8a108208"
+      "linkedIn": "https://www.linkedin.com/in/cynthia-ng-b8a108208",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/TeonieQ.jpg",
       "name": "Teonie Quach",
       "role": "Creatives Director",
-      "linkedIn": "https://www.linkedin.com/in/teonie-quach-7364052a8"
+      "linkedIn": "https://www.linkedin.com/in/teonie-quach-7364052a8",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/ArtemS.jpg",
       "name": "Artem Suiargulov",
       "role": "Industry & Sponsorships Director",
-      "linkedIn": "https://www.linkedin.com/in/artem-suiargulov"
+      "linkedIn": "https://www.linkedin.com/in/artem-suiargulov",
+      "email": "industry@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/SamuelG.jpg",
       "name": "Samuel Gray",
       "role": "Industry & Sponsorships Director",
-      "linkedIn": "https://www.linkedin.com/in/samuel-gray-mechatronic"
+      "linkedIn": "https://www.linkedin.com/in/samuel-gray-mechatronic",
+      "email": "industry@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/AlanC.jpg",
       "name": "Alan Choi",
       "role": "IT Director",
-      "linkedIn": "https://www.linkedin.com/in/alan-choi-86579120a/"
+      "linkedIn": "https://www.linkedin.com/in/alan-choi-86579120a/",
+      "email": "technical@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/WeichenT.jpg",
       "name": "Weichen Tie",
       "role": "IT Director",
-      "linkedIn": "https://www.linkedin.com/in/weichentie/"
+      "linkedIn": "https://www.linkedin.com/in/weichentie/",
+      "email": "technical@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/AlenJ.jpg",
       "name": "Alen Jowins",
       "role": "Marketing Director",
-      "linkedIn": "https://www.linkedin.com/in/alen-jowins-56a8b6315"
+      "linkedIn": "https://www.linkedin.com/in/alen-jowins-56a8b6315",
+      "email": "info@ramsocunsw.org"
     },
     {
-      "profileImg": "/images/profiles/unknown.jpg",
+      "profileImg": "/images/profiles/2025/JaysonP.jpg",
       "name": "Jayson Pang",
       "role": "Marketing Director",
-      "linkedIn": null
+      "linkedIn": "https://au.linkedin.com/in/jayson-pang-b32b82330",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/JahiP.jpg",
       "name": "Jahi Patel",
       "role": "OutReach Director",
-      "linkedIn": null
+      "linkedIn": null,
+      "email": "outreach@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/TarunS.jpg",
       "name": "Tarun Sathish",
       "role": "OutReach Director",
-      "linkedIn": "https://www.linkedin.com/in/tarun-sathish-9719282b9/"
+      "linkedIn": "https://www.linkedin.com/in/tarun-sathish-9719282b9/",
+      "email": "outreach@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/AliffA.jpg",
       "name": "Aliff Azlan",
       "role": "Projects Director",
-      "linkedIn": "https://www.linkedin.com/in/aliff-azlan-73980920a/"
+      "linkedIn": "https://www.linkedin.com/in/aliff-azlan-73980920a/",
+      "email": "technical@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/RyanK.jpg",
       "name": "Ryan Kwok",
       "role": "Projects Director",
-      "linkedIn": "https://www.linkedin.com/in/ryan-kwok-8549452a5"
+      "linkedIn": "https://www.linkedin.com/in/ryan-kwok-8549452a5",
+      "email": "technical@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/SamB.jpg",
       "name": "Sam Banerjee",
       "role": "Socials Director",
-      "linkedIn": "https://www.linkedin.com/in/akshyt-banerjee-7998a1199"
+      "linkedIn": "https://www.linkedin.com/in/akshyt-banerjee-7998a1199",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/CandyT.jpg",
       "name": "Candy Tang",
       "role": "Socials Director",
-      "linkedIn": "https://www.linkedin.com/in/candyltang"
+      "linkedIn": "https://www.linkedin.com/in/candyltang",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/AngeloS.jpg",
       "name": "Angelo Sleiman",
       "role": "Workshops Director",
-      "linkedIn": "https://www.linkedin.com/in/angelo-sleiman-b47849245"
+      "linkedIn": "https://www.linkedin.com/in/angelo-sleiman-b47849245",
+      "email": "technical@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/SithulaG.jpg",
       "name": "Sithula Angulugaha Gamage",
       "role": "Workshops Director",
-      "linkedIn": "https://www.linkedin.com/in/sithulagamage/"
+      "linkedIn": "https://www.linkedin.com/in/sithulagamage/",
+      "email": "technical@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/ReshikaA.jpg",
       "name": "Reshika Aich",
       "role": "Women In Engineering Director",
-      "linkedIn": "https://www.linkedin.com/in/reshika-aich-360059310"
+      "linkedIn": "https://www.linkedin.com/in/reshika-aich-360059310",
+      "email": "info@ramsocunsw.org"
     },
     {
       "profileImg": "/images/profiles/2025/TrishaC.jpg",
       "name": "Trisha Chittajallu",
       "role": "Women In Engineering Director",
-      "linkedIn": "https://au.linkedin.com/in/trisha-chittajallu"
+      "linkedIn": "https://au.linkedin.com/in/trisha-chittajallu",
+      "email": "info@ramsocunsw.org"
     }
   ],
-  "subcoms": [
-    {
-      "portfolio": "Socials",
-      "members": []
-    },
-    {
-      "portfolio": "Workshops",
-      "members": []
-    },
-    {
-      "portfolio": "Projects",
-      "members": []
-    },
-    {
-      "portfolio": "Industry & Sponsors",
-      "members": []
-    },
-    {
-      "portfolio": "Creatives",
-      "members": []
-    },
-    {
-      "portfolio": "Marketing",
-      "members": []
-    }
-  ]
+  "subcoms": []
 }

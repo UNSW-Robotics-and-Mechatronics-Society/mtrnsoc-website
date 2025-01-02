@@ -1,7 +1,17 @@
 // This file contains all the social media contacts
 
 export type SocialData = {
-  name: "Facebook Group" | "Facebook Page" | "LinkedIn" | "Instagram" | "Email" | "Discord";
+  name:
+    | "Facebook Group"
+    | "Facebook Page"
+    | "LinkedIn"
+    | "Instagram"
+    | "General Email"
+    | "Industry Email"
+    | "Info Email"
+    | "OutReach Email"
+    | "Technical Email"
+    | "Discord";
   /**
    * Display string
    */
@@ -10,7 +20,7 @@ export type SocialData = {
    * Actual url
    */
   url: string;
-  logoUrl: string;
+  logoUrl?: string;
   altText: string;
 };
 
@@ -56,12 +66,30 @@ export const instagramData: SocialData = {
   altText: "Instagram logo",
 };
 
-export const emailData: SocialData = {
-  name: "Email",
-  display: "mechatronics.unsw@gmail.com",
-  url: "mailto:mechatronics.unsw@gmail.com",
-  logoUrl: "/logos/emailLogo.svg",
-  altText: "email logo",
+export const generalEmailData: SocialData = {
+  name: "General Email",
+  display: "info@ramsocunsw.org",
+  url: "mailto:info@ramsocunsw.org",
+  altText: "general email",
+};
+
+export const industryEmailData: SocialData = {
+  name: "Industry Email",
+  display: "industry@ramsocunsw.org",
+  url: "mailto:industry@ramsocunsw.org",
+  altText: "industry email",
+};
+export const technicalEmailData: SocialData = {
+  name: "Technical Email",
+  display: "technical@ramsocunsw.org",
+  url: "mailto:technical@ramsocunsw.org",
+  altText: "technical email",
+};
+export const outReachEmailData: SocialData = {
+  name: "OutReach Email",
+  display: "outreach@ramsocunsw.org",
+  url: "mailto:outreach@ramsocunsw.org",
+  altText: "outreach email",
 };
 
 export const discordData: SocialData = {
@@ -81,7 +109,10 @@ const defaultSocialsData: SocialData[] = [
   facebookPageData,
   linkedInData,
   instagramData,
-  emailData,
+  generalEmailData,
+  industryEmailData,
+  technicalEmailData,
+  outReachEmailData,
   discordData,
 ];
 

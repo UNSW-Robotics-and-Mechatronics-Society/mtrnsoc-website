@@ -13,8 +13,8 @@ const Logo = () => {
     <Link legacyBehavior href="/">
       <a>
         <img
-          src="/logos/CulturedOnWhite.svg"
-          alt="MTRNSoc Logo"
+          src="/logos/RAMSocLogo.svg"
+          alt="RAMSoc Logo"
           aria-label="logo"
           className={styles.logo}
         />
@@ -105,7 +105,7 @@ const NavBar = (): JSX.Element => {
 
   return (
     <div className={`${styles.mainContainer} ${isTop ? "" : "shadow-md"}`}>
-      <ContentContainer>
+      <ContentContainer noLimit={false}>
         <div className="w-full max-md:hidden">
           <DesktopNavBar currentRoute={route} />
         </div>

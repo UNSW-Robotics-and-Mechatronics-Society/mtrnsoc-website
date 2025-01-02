@@ -13,6 +13,7 @@ export type ProfileData = {
   name: string;
   role: string;
   linkedIn: string | null;
+  email: string;
 };
 
 export type SubcomProfileData = {

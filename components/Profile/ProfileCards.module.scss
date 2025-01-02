@@ -1,9 +1,10 @@
 .mainContainer {
-  @apply flex flex-wrap justify-center max-w-4xl mx-auto;
+  @apply flex flex-wrap justify-center mx-auto;
 }
 
 .profileContainer {
-  @apply flex flex-col items-center justify-between m-2 p-6 w-64 h-96 rounded-lg;
+  @apply flex flex-col items-center justify-center m-10 p-5 w-[25rem] h-[28rem] rounded-lg shadow-md duration-300;
+  @apply hover:shadow-2xl hover:-translate-y-3 hover:ease-out;
 }
 
 .execBGColour {
@@ -14,8 +15,29 @@
   @apply bg-[#f4f7fa];
 }
 
+.pictureWrapper {
+  @apply relative w-64 h-64 flex justify-center items-center;
+}
+
 .picture {
-  @apply h-44 w-44 rounded-full object-cover;
+  @apply rounded-full object-cover h-64 w-64 transition-opacity duration-300;
+}
+
+.linkedInIcon {
+  @apply absolute opacity-0 h-16 transition-opacity duration-300;
+}
+
+.linkedInIcon > img {
+  @apply h-24;
+  filter: invert(20%) sepia(100%) saturate(5000%) hue-rotate(200deg) brightness(90%) contrast(90%);
+}
+
+.hoverEnabled:hover .picture {
+  @apply opacity-30;
+}
+
+.hoverEnabled:hover .linkedInIcon {
+  @apply opacity-100;
 }
 
 .descriptionContainer {
@@ -23,17 +45,17 @@
 }
 
 .textContainer {
-  @apply flex flex-col justify-start items-center pt-8;
+  @apply flex flex-col justify-start items-center pt-5;
 }
 
 .name {
-  @apply text-center text-xl font-semibold leading-tight;
-  @apply h-14;
+  @apply text-center text-2xl font-semibold leading-tight;
+  @apply h-8;
 }
 
 .position {
-  @apply text-center text-gray-500 font-normal text-sm uppercase leading-normal;
-  @apply h-12;
+  @apply text-center text-gray-500 font-normal text-xl uppercase leading-normal;
+  @apply h-16;
 }
 
 .links {
@@ -41,7 +63,7 @@
 }
 
 .logo {
-  @apply h-6 px-1;
+  @apply h-8 px-1;
   &:hover {
     @apply scale-110;
   }
@@ -51,65 +73,14 @@
   }
 }
 
-/*
-mx-48 px-28
-.mainContainer {
-  @apply grid place-items-center flex-wrap bg-[#E8EFF5]/[.35] m-2 p-6;
-}
-//flex justify-center items-center flex-row
-.profileContainer {
-  @apply w-72;
+.section {
+  @apply w-full mb-8;
 }
 
-content-evenly 
-
-.mainContainer {
-  @apply flex flex-col w-full;
-}
-.links {
-  @apply flex flex-row justify-center pt-10;
+.sectionTitle {
+  @apply text-3xl font-bold mb-4 text-center text-secondary;
 }
 
-.eventsContainer {
-  @apply flex flex-row w-full justify-around pb-10;
+.profileGrid {
+  @apply flex flex-wrap justify-center gap-8;
 }
-
-.button {
-  @apply bg-onyx text-off-white px-6 py-3 rounded-3xl font-normal text-lg hover:scale-[1.05] duration-100 hover:shadow;
-}
-
-.errorText {
-  @apply w-full grid place-items-center text-xl;
-}
-
-.navigationContainer {
-  @apply grid place-items-center h-full;
-}
-
-.navigationButtons {
-  @apply h-14 hover:cursor-pointer min-w-[1.5rem];
-}
-
-.imageSliderContainer {
-  @apply flex flex-row content-center justify-around w-full;
-}
-
-.eventsBannerImage {
-  @apply max-h-[35rem] rounded-3xl hover:scale-[1.01] duration-100 hover:shadow-xl border-onyx border-2;
-}
-
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-  max-height: 35rem;
-}
-
-.slideActive {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.03);
-  max-height: 35rem;
-}
-
-
-*/

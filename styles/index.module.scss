@@ -25,7 +25,7 @@
 }
 
 .featuredPersonCard {
-  @apply bg-[#E8EFF5] border border-yaleBlue p-4 mr-4 flex-col content-center max-md:flex max-md:flex-row max-md:justify-center max-md:mb-1;
+  @apply bg-[#E8EFF5] border border-primary p-4 mr-4 flex-col content-center max-md:flex max-md:flex-row max-md:justify-center max-md:mb-1;
 }
 
 .featuredPersonCardText {
@@ -35,7 +35,7 @@
 .featuredTextBox {
   display: relative;
   /* background: rgba(232, 239, 245, 0.65); */
-  border: 1px solid variables.$yaleBlue;
+  border: 1px solid variables.$primary;
   box-sizing: border-box;
   width: 88%;
   padding-top: 2rem;
@@ -84,7 +84,7 @@
 }
 
 .sponsorLogos {
-  @apply h-28 my-2 px-5 max-sm:px-0;
+  @apply h-28 max-w-64 my-2 px-5 max-sm:px-0;
 }
 
 /* .joinButton {

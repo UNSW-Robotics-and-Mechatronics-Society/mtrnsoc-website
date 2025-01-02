@@ -221,7 +221,7 @@ const Home: NextPage<EventsPageProps> = ({ yearData, pageData }) => {
         return eventsByYearByTerm.find((y) => y.year === x);
       })[0],
     );
-  }, [eventsByYearByTerm]);
+  }, [eventsByYearByTerm, years]);
 
   const CurrentEventsSection = useCallback(() => {
     if (currentEvents && currentEvents.length >= 1) {

@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import { Banner, ContentContainer, MetaTags } from "components";
 import { PageInformation, sponsorsPageData } from "data/navLinksData";
-import { SocialData, emailData } from "data/socialsData";
+import { SocialData, industryEmailData } from "data/socialsData";
 import sponsorsData, { SponsorData } from "data/sponsorsData";
 import styles from "styles/sponsors.module.scss";
 
@@ -41,7 +41,7 @@ const Sponsors: NextPage<SponsorsPageProps> = ({ affiliates, sponsors, emailData
                 {emailData.display}
               </Link>
             </span>
-            , or go through our contact page!
+            .
           </p>
           <div className={styles.sectionContainer}>
             <h1 className={styles.sectionTitle}>Proudly Supported By</h1>
@@ -81,7 +81,7 @@ export const getStaticProps: GetStaticProps<SponsorsPageProps> = async () => {
     props: {
       affiliates: affiliates,
       sponsors: sponsors,
-      emailData: emailData,
+      emailData: industryEmailData,
       pageData: sponsorsPageData,
     },
   };
