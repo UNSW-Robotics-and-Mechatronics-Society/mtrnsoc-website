@@ -134,7 +134,7 @@ const NavBar = (): JSX.Element =>
               <li
                 key={ item.navBarName }
                 className={ `${ styles.mobileNavButton } ${ item.route === route ? "font-semibold" : ""
-                  }` }
+                }` }
                 onClick={ () => setIsOpen( false ) }
               >
                 <Link legacyBehavior href={ item.route }>
