@@ -1,16 +1,17 @@
 /* https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files */
 
-$headerHeight: 3.75rem;
+$headerHeight: 5rem;
 $footerHeight: 9.375rem;
 $footerHeightMobile: 7.5rem;
 
-$yaleBlue: #274c77;
+$primary: #142531;
+$secondary: #56a8e0;
 $culturedWhite: #f5f5f5;
 $onyx: #3a3e41;
-$uranian-blue: #b8d9f4;
-$carolinaBlue: #5fa8d3;
-$littleBoyBlue: #85a8d6;
-$aeroBlue: #7ab8e1;
+$uranian-blue: #7abfed;
+$carolinaBlue: #7abfed;
+$littleBoyBlue: #7abfed;
+$aeroBlue: #7abfed;
 
 /* Breakpoints based off tailwindcss */
 /* max-width breakpoints */
