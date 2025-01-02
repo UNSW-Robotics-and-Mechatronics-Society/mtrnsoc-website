@@ -12,3 +12,17 @@
 .subcomName {
   @apply text-center leading-normal text-gray-500 text-lg font-medium;
 }
+
+.joinUsMessage {
+  text-align: center;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+.buttonStyle {
+  @apply text-onyx border-onyx text-lg font-normal rounded-lg py-3 px-6 duration-100 hover:scale-[1.05] hover:shadow border-[1.5px] hover:bg-onyx hover:text-culturedWhite;
+}
+
+.joinUsMessage p {
+  @apply text-onyx mt-4;
+}
