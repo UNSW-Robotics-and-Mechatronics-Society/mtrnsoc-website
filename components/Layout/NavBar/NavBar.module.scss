@@ -15,7 +15,7 @@
   /* @apply w-full bg-yale-blue grid place-items-center h-[100%]; */
 
   width: 100%;
-  background-color: variables.$yaleBlue;
+  background-color: variables.$primary;
   display: grid;
   place-items: center;
   position: fixed;
@@ -24,15 +24,15 @@
 }
 
 .DesktopNavBarContainer {
-  @apply h-full w-full flex justify-between content-center pt-[0.125rem];
+  @apply h-full w-full flex justify-between pt-[0.125rem];
 }
 
 .logo {
-  @apply h-14;
+  @apply h-16;
 }
 
 .navLinksContainer {
-  @apply flex flex-row content-center justify-between;
+  @apply flex flex-row content-center justify-end;
 }
 
 .buttonContainer {
@@ -40,7 +40,7 @@
 }
 
 .buttonText {
-  @apply py-2 px-3 text-base text-off-white uppercase;
+  @apply py-2 px-3 text-base text-off-white uppercase underline-offset-8 hover:underline;
 }
 
 .navigationBurger {
