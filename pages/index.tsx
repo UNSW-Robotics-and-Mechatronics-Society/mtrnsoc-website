@@ -16,21 +16,20 @@ type TitleHeaderProps = {
   text: string;
 };
 
-const TitleHeader = ( { text }: TitleHeaderProps ): JSX.Element =>
-{
-  return <h1 className={ styles.title }>{ text.toUpperCase() }</h1>;
+const TitleHeader = ({ text }: TitleHeaderProps): JSX.Element => {
+  return <h1 className={styles.title}>{text.toUpperCase()}</h1>;
 };
 
-const SectionWhoWeAre = (): JSX.Element =>
-{
+const SectionWhoWeAre = (): JSX.Element => {
   return (
     <ContentContainer>
-      <div className={ styles.sectionContainer }>
+      <div className={styles.sectionContainer}>
         <TitleHeader text="Who we are" />
-        <div className={ styles.WhoWeAreTextContainer }>
+        <div className={styles.WhoWeAreTextContainer}>
           <p>
-            UNSW Robotics and Mechatronics Society (<b>RAMSoc</b>) is a student-led society that aims to promote
-            Robotics and Mechatronic Engineering opportunities and pathways inside UNSW. As the largest mechatronics-related society within the university, RAMSoc has a
+            UNSW Robotics and Mechatronics Society (<b>RAMSoc</b>) is a student-led society that
+            aims to promote Robotics and Mechatronic Engineering opportunities and pathways inside
+            UNSW. As the largest mechatronics-related society within the university, RAMSoc has a
             rapidly growing membership base, already with <b>over 1000 members</b>.
           </p>
           <br />
@@ -41,10 +40,10 @@ const SectionWhoWeAre = (): JSX.Element =>
             like-minded individuals.
           </p>
         </div>
-        <div className={ styles.WhoWeAreButtonsContainer }>
+        <div className={styles.WhoWeAreButtonsContainer}>
           <Link legacyBehavior href="/team">
             <a className="pb-5 px-5">
-              <button className={ styles.buttonStyle }>Meet Our Team</button>
+              <button className={styles.buttonStyle}>Meet Our Team</button>
             </a>
           </Link>
         </div>
@@ -57,13 +56,12 @@ type SectionOurEventsProps = {
   currentEvents: Event[];
 };
 
-const SectionOurEvents = ( { currentEvents }: SectionOurEventsProps ): JSX.Element =>
-{
+const SectionOurEvents = ({ currentEvents }: SectionOurEventsProps): JSX.Element => {
   return (
     <ContentContainer customBackgroundColour="bg-uranian-blue">
-      <div className={ styles.sectionContainer }>
+      <div className={styles.sectionContainer}>
         <TitleHeader text="Our Upcoming Events" />
-        <OurCurrentEvents currentEvents={ currentEvents } buttonStyle={ styles.buttonStyle } />
+        <OurCurrentEvents currentEvents={currentEvents} buttonStyle={styles.buttonStyle} />
       </div>
     </ContentContainer>
   );
@@ -73,23 +71,21 @@ type SponsorsSectionProps = {
   sponsors: SponsorData[];
 };
 
-const SponsorSection = ( { sponsors }: SponsorsSectionProps ): JSX.Element =>
-{
+const SponsorSection = ({ sponsors }: SponsorsSectionProps): JSX.Element => {
   return (
     <ContentContainer customBackgroundColour="bg-uranian-blue">
-      <div className={ styles.sectionContainer }>
+      <div className={styles.sectionContainer}>
         <TitleHeader text="Proudly Supported By" />
-        <div className={ styles.sponsorsContainer }>
-          { sponsors.map( ( sponsor ) =>
-          {
+        <div className={styles.sponsorsContainer}>
+          {sponsors.map((sponsor) => {
             return (
-              <Link legacyBehavior href={ sponsor.link } key={ sponsor.alt }>
+              <Link legacyBehavior href={sponsor.link} key={sponsor.alt}>
                 <a target="_blank">
-                  <img src={ sponsor.src } alt={ sponsor.alt } className={ styles.sponsorLogos } />
+                  <img src={sponsor.src} alt={sponsor.alt} className={styles.sponsorLogos} />
                 </a>
               </Link>
             );
-          } ) }
+          })}
         </div>
       </div>
     </ContentContainer>
@@ -100,17 +96,16 @@ type JoinUsSectionPops = {
   spArcLink: string;
 };
 
-const JoinUsSection = ( { spArcLink }: JoinUsSectionPops ): JSX.Element =>
-{
+const JoinUsSection = ({ spArcLink }: JoinUsSectionPops): JSX.Element => {
   return (
     <ContentContainer>
-      <div className={ styles.sectionContainer }>
+      <div className={styles.sectionContainer}>
         <TitleHeader text="Join The Society" />
         <div>
           <p className="pb-10">Want to be involved? Join Us!</p>
-          <Link legacyBehavior href={ spArcLink }>
+          <Link legacyBehavior href={spArcLink}>
             <a target="_blank">
-              <button className={ styles.buttonStyle }>Join us on SpArc</button>
+              <button className={styles.buttonStyle}>Join us on SpArc</button>
             </a>
           </Link>
         </div>
@@ -126,55 +121,51 @@ type HomePageProps = {
   pageData: PageInformation;
 };
 
-const Home: NextPage<HomePageProps> = ( { sponsors, featuredPersonData, spArcLink, pageData } ) =>
-{
+const Home: NextPage<HomePageProps> = ({ sponsors, featuredPersonData, spArcLink, pageData }) => {
   const { width } = useWindowDimensions();
-  const [ position, setPosition ] = React.useState<PositionType>( "bottom-left" );
+  const [position, setPosition] = React.useState<PositionType>("bottom-left");
 
   const { currentEventsRaw } = useEvents();
-  React.useEffect( () =>
-  {
+  React.useEffect(() => {
     // 639px is based on a set TailwindCSS breakpoint
-    if ( width !== null ) setPosition( width <= 639 ? "center" : "bottom-left" );
-  }, [ width ] );
+    if (width !== null) setPosition(width <= 639 ? "center" : "bottom-left");
+  }, [width]);
 
-  const currentEvents = currentEventsRaw?.map( ( x ) => Event.eventFromEventDetails( x ) ) ?? [];
+  const currentEvents = currentEventsRaw?.map((x) => Event.eventFromEventDetails(x)) ?? [];
   const scrollID = "homePageScrollDiv";
 
   return (
     <section className="h-full">
       <MetaTags
-        title={ pageData.title }
-        description={ pageData.description }
-        imgURL={ pageData.bannerImageURL }
+        title={pageData.title}
+        description={pageData.description}
+        imgURL={pageData.bannerImageURL}
       />
-      <div className={ styles.mainContainer }>
+      <div className={styles.mainContainer}>
         <Banner
-          imgURL={ pageData.bannerImageURL }
-          isBrand={ true }
-          arrow={ true }
-          position={ position }
-          scrollToID={ scrollID }
+          imgURL={pageData.bannerImageURL}
+          isBrand={true}
+          arrow={true}
+          position={position}
+          scrollToID={scrollID}
         />
-        <div id={ scrollID }></div>
+        <div id={scrollID}></div>
         <SectionWhoWeAre />
-        <SectionOurEvents currentEvents={ currentEvents } />
-        {/* <SectionMeetTheTeam featuredPersonData={ featuredPersonData } /> */ }
-        <JoinUsSection spArcLink={ spArcLink } />
-        <SponsorSection sponsors={ sponsors } />
+        <SectionOurEvents currentEvents={currentEvents} />
+        {/* <SectionMeetTheTeam featuredPersonData={ featuredPersonData } /> */}
+        <JoinUsSection spArcLink={spArcLink} />
+        <SponsorSection sponsors={sponsors} />
       </div>
     </section>
   );
 };
 
-export const getStaticProps: GetStaticProps<HomePageProps> = async () =>
-{
+export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
   const year = new Date().getFullYear();
-  const teamData = await loadTeamData( year );
-  const featuredPersonData = teamData.execs.find( ( x ) => x.role === "President" );
+  const teamData = await loadTeamData(year);
+  const featuredPersonData = teamData.execs.find((x) => x.role === "President");
 
-  if ( featuredPersonData === undefined )
-  {
+  if (featuredPersonData === undefined) {
     throw "Could not find person to feature from teamData.ts";
   }
 

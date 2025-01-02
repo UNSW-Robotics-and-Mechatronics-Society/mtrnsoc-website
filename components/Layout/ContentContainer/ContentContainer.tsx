@@ -9,16 +9,15 @@ type ContentContainerProps = {
   children: React.ReactNode;
 };
 
-const ContentContainer = ( {
+const ContentContainer = ({
   children,
   noLimit = true,
   customBackgroundColour = undefined,
-}: ContentContainerProps ): JSX.Element =>
-{
+}: ContentContainerProps): JSX.Element => {
   return (
-    <section className={ `${ styles.mainContainer } ${ customBackgroundColour ?? "" }` }>
-      <div className={ `w-full ${ noLimit ?? styles.limitingContainer }` }>
-        <div className={ styles.paddingContainer }>{ children }</div>
+    <section className={`${styles.mainContainer} ${customBackgroundColour ?? ""}`}>
+      <div className={`w-full ${noLimit ?? styles.limitingContainer}`}>
+        <div className={styles.paddingContainer}>{children}</div>
       </div>
     </section>
   );
