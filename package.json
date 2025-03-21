@@ -13,7 +13,7 @@
     "prettier:write": "prettier --write \"./**/*.{ts,tsx,js,jsx,scss,css}\""
   },
   "dependencies": {
-    "@netlify/functions": "^2.8.1",
+    "@netlify/functions": "^3.0.4",
     "contentful": "^9.2.14",
     "moment": "^2.29.4",
     "next": "14.2.4",
